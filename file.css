@@ -1,0 +1,67 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 146, 29);
+}
+
+#title{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: max-content;
+}
+
+#title::first-letter{
+    font-size: 42px;
+}
+
+#title::after{
+    content: "";
+    height: 3px;
+    background-color: rgb(255, 219, 119);
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+}
+
+section input{
+    border: 1px solid balck;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    background-color: rgb(255, 219, 119);
+}
+
+section input:focus{
+    border: 2px solid black;
+}
+
+section button{
+    background-color: rgb(255, 187, 0);
+    padding: 5px;
+    font-size: 16px;
+}
+
+section p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 13px;
+}

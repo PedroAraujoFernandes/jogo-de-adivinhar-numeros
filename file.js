@@ -10,7 +10,7 @@ let numero = Math.floor(Math.random(1) * 100);
 function tudo(){
 tentativas --;
 
-dois.innerHTML = "tentativas " + tentativas;
+dois.innerHTML = "tentativa " + tentativas  +"°";
 let campo = document.getElementById("campo").value;
 console.log(numero);
 
@@ -31,17 +31,16 @@ tentativas = 10;
 //ivalidação de numeros inferiores ou iguais a zero com 
 else if(campo <= 0 || campo >= 100){
   texto.innerHTML = "este numero não é valido.";
-  console.log("o valor é invalido");
 }
 
 //condição de caso o numero seja maior que o numero sortido
 else if(campo > numero){
-  texto.innerHTML = "chutou alto" + campo;
+  texto.innerHTML = "chutou alto, tente novamente";
 }
 
 //condição caso o numero seja menor que o numero sortido
 else if(campo < numero){
-  texto.innerHTML = "chutou baixo" + campo;
+  texto.innerHTML = "chutou baixo, tente novamente";
 }
 
 //invalidação de qualquer caractere que não seja numero
